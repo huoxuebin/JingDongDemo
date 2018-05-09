@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jingdongdeom.Activity.ChuangDingdanActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#f89"
+        android:gravity="center"
+        android:text="创建订单"
+        android:textSize="20dp" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_alignParentBottom="true"
+
+      android:orientation="horizontal"
+      >
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="40dp"
+          android:layout_weight="4"
+          android:layout_gravity="center_vertical"
+          android:textSize="20dp"
+          android:background="#888"
+          android:id="@+id/dprice"
+          />
+
+      <TextView
+          android:id="@+id/xiadan"
+          android:layout_width="0dp"
+          android:layout_height="40dp"
+          android:gravity="center"
+          android:textSize="20dp"
+          android:layout_gravity="center_vertical"
+          android:text="确定下单"
+          android:background="#f00"
+          android:layout_weight="2"
+          />
+  </LinearLayout>
+</RelativeLayout>

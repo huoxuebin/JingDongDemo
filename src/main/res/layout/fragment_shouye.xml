@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--     //轮播-->
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+        </com.youth.banner.Banner>
+            <ImageView
+                android:id="@+id/op"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/tu"
+                />
+
+         <!--   //九宫格-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ry"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+           <!-- //秒杀-->
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:textColor="#FF3848"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:text="京东秒杀"/>
+
+                <TextView
+                    android:textColor="#222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:text="  12点场 "/>
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tv_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:text="02"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text=":"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tv_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:text="15"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text=":"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tv_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:text="36"/>
+
+            </LinearLayout>
+
+            <!--秒杀-->
+            <android.support.v7.widget.RecyclerView
+        android:id="@+id/ry2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </android.support.v7.widget.RecyclerView>
+
+            <!--跑马灯-->
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="京东快报"
+            android:textColor="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.sunfusheng.marqueeview.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:mvAnimDuration="1000"
+            app:mvDirection="bottom_to_top"
+            app:mvInterval="3000"
+            app:mvTextColor="#000000"
+            app:mvTextSize="14sp"
+            app:mvSingleLine="true"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#000000"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:text="更多"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#F0F8FF"
+                />
+            <!--为您推荐-->
+        <TextView
+            android:text="为您推荐"
+            android:textColor="#f00"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ry3"
+            ></android.support.v7.widget.RecyclerView>
+
+
+
+
+    </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <ImageView
+            android:id="@+id/saoyisao"
+            android:src="@drawable/sao_hei"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/serach"
+            android:background="@drawable/srk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+
+            />
+
+        <ImageView
+            android:background="@drawable/msg_hei"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jingdongdeom.Activity.ZhuCeActivity">'
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="注册"
+        android:background="#f89"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/zname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+        />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zpass"
+        android:hint="请输入密码"
+        />
+
+
+        <Button
+            android:text="注册"
+            android:onClick="zc"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
